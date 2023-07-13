@@ -1,0 +1,241 @@
+.cart {
+  display: flex;
+  gap: 128px;
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.catalog-items {
+  max-width: 652px;
+  display: flex;
+  background: #fff;
+}
+
+.catalog-items:hover {
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.catalog-items-img {
+  height: 100%;
+}
+
+.catalog-items-content {
+  margin: 22px 97px 62px 31px;
+  max-width: 262px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.catalog-items-content-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.catalog-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.red {
+  color: #EF5B70;
+}
+
+.catalog-list-input {
+  width: 44px;
+  height: 25px;
+  margin-left: 24px;
+  padding: 1px 0 1px 16px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  color: #656565;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cross {
+  display: block;
+  margin: 28px 22px auto auto;
+}
+
+.cart-buttons-wrp {
+  display: flex;
+  justify-content: space-between;
+  max-width: 652px;
+}
+
+.cart-buttons {
+  padding: 16px 40px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  color: #000;
+  cursor: pointer;
+}
+.cart-buttons-txt {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cart-buttons:hover {
+  color: #fff;
+  background: #EF5B70;
+}
+
+.cart-buttons:active {
+  background: #fff;
+  color: #000;
+}
+
+.form-checkout {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrp {
+  padding: 17px 0;
+}
+
+.form {
+  font-family: Lato;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  color: #222;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.form-adress-country {
+  width: 360px;
+  padding: 12px 16px 18px 16px;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  color: #222;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.form-adress-country-placeholder::-moz-placeholder {
+  color: #B1B1B1;
+}
+.form-adress-country-placeholder::placeholder {
+  color: #B1B1B1;
+}
+
+.form-btn {
+  padding: 10px 14px 12px 16px;
+  margin-top: 23px;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  background: #fff;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+}
+.form-btn:hover {
+  background: #EF5B70;
+  color: #fff;
+}
+.form-btn:active {
+  background: #fff;
+  color: #4A4A4A;
+}
+
+.checkout {
+  margin-top: 40px;
+  max-width: 360px;
+  background: #F5F3F3;
+}
+
+.sub-total {
+  margin: 39px 34px 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 108px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grund-total {
+  margin: 12px 37px 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.grund-total-price {
+  color: #F16D7F;
+  font-weight: 700;
+}
+
+.checkout-btn-wrp {
+  margin: 0 43px 42px;
+}
+
+.checkout-btn {
+  margin-top: 17px;
+  padding: 16px 42px;
+  background: #F16D7F;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #fff;
+  color: #F16D7F;
+}
+
+.checkout-btn:active {
+  background: #F16D7F;
+  color: #FFF;
+}/*# sourceMappingURL=cart.css.map */
