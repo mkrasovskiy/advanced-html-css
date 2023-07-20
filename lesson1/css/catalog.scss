@@ -8,8 +8,7 @@ a {
     text-decoration: none;
 }
 .filter-sort {
-    padding-top: 39px;
-    height: 132px;
+    margin: 52px auto 64px auto;
     position: relative;
     display: flex;
     gap: 30px;
@@ -52,6 +51,7 @@ a {
     &-content {
         padding: 0 16px 16px 16px;
         background: #fff;
+        box-shadow: 6px 5px 35px rgba(0, 0, 0, 0.21);
         &-item {
             margin-top: 16px;
             &-heading {
@@ -139,4 +139,103 @@ a {
         line-height: normal;
     }
     
+}
+.products-list {
+    margin: 0 0 48px 0;
+}
+.products-pagination {
+    margin: 0 auto 96px auto;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    width: 283px;
+    height: 43px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 202px;
+        &_svg {
+            fill:#000;
+        }
+        &_svg:hover {
+            fill:#EF5B70;
+        }
+        &_link-active {
+            color: #EF5B70;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &_link {
+            color: #C4C4C4;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &_link:hover {
+            color: #EF5B70;
+        }
+        &_link-ellipsis {
+            color: #C4C4C4;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .filter-sort {
+        margin: 24px auto 40px auto;
+    }
+    .products-list {
+        margin: 0 0 40px 0;
+    }
+    .products-pagination {
+        margin: 0 auto 64px auto;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .filter {
+        position: relative;
+        width: 107px;
+        &[open] {
+            width: 180px;
+        }
+        &-content {
+            position: absolute;
+            width: 109px;
+            top: 41px;
+        }
+        &-summary-title {
+            display: none;
+            &-svg {
+                width: 37px;
+                height: 25px;
+            }
+        }
+        &-sort {
+            margin: 24px auto 32px auto;
+            gap: 0;
+        }
+    }
+    .sort {
+        gap: 24px;
+        &-title {
+            font-size: 12px;
+        }
+        &-summary {
+            gap: 9px;
+        }
+    }
+    .products-list {
+        margin: 0 0 40px 0;
+    }
+    .products-pagination {
+        margin: 0 auto 64px auto;
+    }
 }

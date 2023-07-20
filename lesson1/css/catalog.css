@@ -11,8 +11,7 @@ a {
 }
 
 .filter-sort {
-  padding-top: 39px;
-  height: 132px;
+  margin: 52px auto 64px auto;
   position: relative;
   display: flex;
   gap: 30px;
@@ -53,6 +52,7 @@ a {
 .filter-content {
   padding: 0 16px 16px 16px;
   background: #fff;
+  box-shadow: 6px 5px 35px rgba(0, 0, 0, 0.21);
 }
 .filter-content-item {
   margin-top: 16px;
@@ -139,4 +139,104 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.products-list {
+  margin: 0 0 48px 0;
+}
+
+.products-pagination {
+  margin: 0 auto 96px auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+  width: 283px;
+  height: 43px;
+}
+.products-pagination__list {
+  display: flex;
+  justify-content: space-between;
+  width: 202px;
+}
+.products-pagination__list_svg {
+  fill: #000;
+}
+.products-pagination__list_svg:hover {
+  fill: #EF5B70;
+}
+.products-pagination__list_link-active {
+  color: #EF5B70;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+.products-pagination__list_link {
+  color: #C4C4C4;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+.products-pagination__list_link:hover {
+  color: #EF5B70;
+}
+.products-pagination__list_link-ellipsis {
+  color: #C4C4C4;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .filter-sort {
+    margin: 24px auto 40px auto;
+  }
+  .products-list {
+    margin: 0 0 40px 0;
+  }
+  .products-pagination {
+    margin: 0 auto 64px auto;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .filter {
+    position: relative;
+    width: 107px;
+  }
+  .filter[open] {
+    width: 180px;
+  }
+  .filter-content {
+    position: absolute;
+    width: 109px;
+    top: 41px;
+  }
+  .filter-summary-title {
+    display: none;
+  }
+  .filter-summary-title-svg {
+    width: 37px;
+    height: 25px;
+  }
+  .filter-sort {
+    margin: 24px auto 32px auto;
+    gap: 0;
+  }
+  .sort {
+    gap: 24px;
+  }
+  .sort-title {
+    font-size: 12px;
+  }
+  .sort-summary {
+    gap: 9px;
+  }
+  .products-list {
+    margin: 0 0 40px 0;
+  }
+  .products-pagination {
+    margin: 0 auto 64px auto;
+  }
 }/*# sourceMappingURL=catalog.css.map */

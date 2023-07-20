@@ -90,7 +90,7 @@ body {
     display: none;
     width: 100%;
     max-width: 232px;
-    min-height: 764px;
+    min-height: 768px;
   /* значение в свойстве min-height удобно задать через переменную равную высоте второго блока */
     padding: 16px 33px;
     box-sizing: border-box;
@@ -130,15 +130,15 @@ body {
 #menu-switch:checked ~ .menu-list {
     display: block;
 }
-.menu-list {
-    display: none;
-    width: 100%;
-    max-width: 232px;
-    min-height: 768px;
-    box-sizing: border-box;
-    background-color: #fff;
+// .menu-list {
+//     display: none;
+//     width: 100%;
+//     max-width: 232px;
+//     min-height: 768px;
+//     box-sizing: border-box;
+//     background-color: #fff;
    
-}
+// }
 .menu-list-title {
     display: block;
     margin: 9px 0 24px 0;
@@ -584,6 +584,9 @@ body {
     .header-list-right > li:nth-child(3) {
         margin: 27px 0 18px 0;
     }
+    .menu-list {
+        min-height: 371px;
+    }
     .promo-items {
         display: flex;
     }
@@ -606,6 +609,9 @@ body {
         font-size: 24px;
         line-height: 29px;
         color: #F16D7F;
+    }
+    .offer {
+        margin: 20px auto 96px auto;
     }
     .offer-item {
         gap: 19px;
@@ -673,9 +679,10 @@ body {
         line-height: 29px;
     }
     .copyright-item {
-        min-width: 703px;
+        min-width: 704px;
       }
 }
+
 @media (max-width: 767px) and (min-width: 320px) {
     .center {
         max-width: 375px;
@@ -697,6 +704,9 @@ body {
     }
     .header-list-right > li:nth-child(3) {
         display: none;
+    }
+    .menu-list {
+        min-height: 390px;
     }
     .promo-items {
         padding: 148px 56px;
@@ -747,11 +757,11 @@ body {
         margin-bottom: 65px;
     }
     .products-list {
-        gap: 32px;
+        gap: 16px;
         margin-bottom: 40px;
     }
     .products-button {
-        margin-bottom: 96px;
+        margin-bottom: 36px;
     }
     .feature {
         padding: 48px 0 81px 0;
